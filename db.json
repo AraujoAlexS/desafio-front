@@ -1,39 +1,67 @@
 {
-    "usuarios": [
-        {
-            "id": 1,
-            "nome": "Quin Travis",
-            "matricula": "2864687",
-            "email": "ut.pharetra@goat.com",
-            "cpf": "37445653007"
-        },
-        {
-            "id": 2,
-            "nome": "Ginger Dominguez",
-            "matricula": "7138228",
-            "email": "eget@goat.com",
-            "cpf": "18384905070"
-        },
-        {
-            "id": 3,
-            "nome": "Chantale Yang",
-            "matricula": "1050302",
-            "email": "primis.in@goat.com",
-            "cpf": "16670793014"
-        },
-        {
-            "id": 4,
-            "nome": "Brooke Park",
-            "matricula": "6483679",
-            "email": "aliquet@goat.com",
-            "cpf": "65726953010"
-        },
-        {
-            "id": 5,
-            "nome": "Bradley Todd",
-            "matricula": "7617254",
-            "email": "elit.a@goat.com",
-            "cpf": "06313855094"
-        }
-    ]
-  }
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Quin Travis",
+      "matricula": "2864687",
+      "email": "ut.pharetra@goat.com",
+      "cpf": "37445653007"
+    },
+    {
+      "id": 2,
+      "nome": "Ginger Dominguez",
+      "matricula": "7138228",
+      "email": "eget@goat.com",
+      "cpf": "18384905070"
+    },
+    {
+      "id": 4,
+      "nome": "Brooke Park",
+      "matricula": "6483679",
+      "email": "aliquet@goat.com",
+      "cpf": "65726953010"
+    },
+    {
+      "nome": "Alex dos Santos de Araújo",
+      "matricula": "1234567",
+      "email": "araujo.alexsantos@gmail.com",
+      "cpf": "1234567891",
+      "id": 5
+    },
+    {
+      "nome": "Alex dos Santos de Araújo",
+      "matricula": "1234567",
+      "email": "araujo.alexsantos@gmail.com",
+      "cpf": "1234567890",
+      "id": 7
+    },
+    {
+      "nome": 0,
+      "matricula": "Aristides",
+      "email": "1234567",
+      "cpf": "ari@gmail.com",
+      "id": 8
+    },
+    {
+      "nome": 0,
+      "matricula": "Alex dos Santos de Araújo",
+      "email": "1234567",
+      "cpf": "araujo.alexsantos@gmail.com",
+      "id": 9
+    },
+    {
+      "nome": "Alex dos Santos de Araújo",
+      "matricula": "1234567",
+      "email": "araujo.alexsantos@gmail.com",
+      "cpf": "1234567890",
+      "id": 10
+    },
+    {
+      "nome": "Alex dos Santos de Araújo",
+      "matricula": "1234567",
+      "email": "araujo.alexsantos@gmail.com",
+      "cpf": "1234567890",
+      "id": 11
+    }
+  ]
+}

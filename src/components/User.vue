@@ -11,7 +11,13 @@
     <td class="content-center" @click="deleteUser(id)">
       <i class="fa-solid fa-trash"></i>
     </td>
-    <Modal class="modal-container" v-show="isModalVisible" @close="closeModal" :propId="id" :propIsUpdate="true">
+    <Modal
+      class="modal-container"
+      v-show="isModalVisible"
+      @close="closeModal"
+      :propId="id"
+      :propIsUpdate="true"
+    >
       <template v-slot:header> Atualizar dados </template>
     </Modal>
   </tr>
@@ -44,12 +50,21 @@ export default {
       this.$parent.deleteUser(id);
       this.$el.parentNode.removeChild(this.$el);
     },
-    updateUser(id, userNome, userMatricula, userEmail, userCpf) {
-      this.nome = userNome
-      this.matricula = userMatricula
-      this.email = userEmail
-      this.cpf = userCpf
-      this.$parent.updateUser(id, userNome, userMatricula, userEmail, userCpf);
+    async updateUser(id, userNome, userMatricula, userEmail, userCpf) {
+      const res = await this.$parent.updateUser(
+        id,
+        userNome,
+        userMatricula,
+        userEmail,
+        userCpf
+      );
+      console.log(res)
+      if (res < 400) {
+        this.nome = userNome;
+        this.matricula = userMatricula;
+        this.email = userEmail;
+        this.cpf = userCpf;
+      }
     },
     showModal() {
       this.isModalVisible = true;
@@ -69,10 +84,12 @@ td {
 
 .content-center {
   text-align: center;
+  transition: all ease-in-out 0.2s;
 }
 .content-center:hover {
   color: rgb(216, 67, 67);
   cursor: pointer;
+  transform: scale(1.15);
 }
 
 .modal-container {

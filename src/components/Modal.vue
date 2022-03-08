@@ -19,48 +19,55 @@
           </button>
         </header>
         <section class="modal-body" id="modalDescription">
-          <div class="input">
-            <label for="input-nome">Nome:</label>
-            <input
-              type="text"
-              id="input-nome"
-              name="input-nome"
-              placeholder="João Aristides"
-              v-model="inputNome"
-            />
-          </div>
-          <div class="input">
-            <label for="input-matricula">Matricula:</label>
-            <input
-              v-mask="'#######'"
-              type="text"
-              id="input-matricula"
-              name="input-matricula"
-              placeholder="6483679"
-              v-model="inputMatricula"
-            />
-          </div>
-          <div class="input">
-            <label for="input-email">Email:</label>
-            <input
-              type="email"
-              id="input-email"
-              name="input-email"
-              placeholder="joaoaristides@gmail.com"
-              v-model="inputEmail"
-            />
-          </div>
-          <div class="input">
-            <label for="input-cpf">CPF:</label>
-            <input
-              v-mask="'###.###.###-##'"
-              type="text"
-              id="input-cpf"
-              name="input-cpf"
-              placeholder="01234567890"
-              v-model="inputCpf"
-            />
-          </div>
+          <slot name="body"> </slot>
+          <form action="">
+            <div class="input">
+              <label for="input-nome">Nome:</label>
+              <input
+                type="text"
+                id="input-nome"
+                name="input-nome"
+                placeholder="João Aristides"
+                v-model="inputNome"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="input-matricula">Matricula:</label>
+              <input
+                v-mask="'#######'"
+                type="text"
+                id="input-matricula"
+                name="input-matricula"
+                placeholder="6483679"
+                v-model="inputMatricula"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="input-email">Email:</label>
+              <input
+                type="email"
+                id="input-email"
+                name="input-email"
+                placeholder="joaoaristides@gmail.com"
+                v-model="inputEmail"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="input-cpf">CPF:</label>
+              <input
+                v-mask="'###.###.###-##'"
+                type="text"
+                id="input-cpf"
+                name="input-cpf"
+                placeholder="01234567890"
+                v-model="inputCpf"
+                required
+              />
+            </div>
+          </form>
         </section>
 
         <footer class="modal-footer">
@@ -88,7 +95,7 @@
 </template>
 
 <script>
-import {mask} from 'vue-the-mask'
+import { mask } from "vue-the-mask";
 export default {
   name: "Modal",
   data() {
@@ -110,8 +117,7 @@ export default {
     close() {
       this.$emit("close");
     },
-    updateUser() {
-      
+    async updateUser() {
       this.$parent.updateUser(
         this.id,
         this.inputNome,
@@ -122,7 +128,7 @@ export default {
 
       this.close();
     },
-    addUser() {
+    async addUser() {
       this.$parent.addUser(
         this.inputNome,
         this.inputMatricula,
@@ -204,6 +210,12 @@ export default {
   border-radius: 2px;
   padding: 3px;
   margin: 2px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 .btn-green {
   background: #4aae9b;

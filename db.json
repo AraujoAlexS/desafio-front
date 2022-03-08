@@ -1,13 +1,6 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nome": "Quin Travis",
-      "matricula": "2864687",
-      "email": "ut.pharetra@goat.com",
-      "cpf": "37445653007"
-    },
-    {
       "id": 2,
       "nome": "Ginger Dominguez",
       "matricula": "7138228",
@@ -29,39 +22,67 @@
       "id": 5
     },
     {
-      "nome": "Alex dos Santos de Araújo",
+      "nome": "Navani",
       "matricula": "1234567",
-      "email": "araujo.alexsantos@gmail.com",
-      "cpf": "1234567890",
+      "email": "navani@gmail.com",
+      "cpf": "123.456.789-50",
       "id": 7
     },
     {
-      "nome": 0,
-      "matricula": "Aristides",
-      "email": "1234567",
-      "cpf": "ari@gmail.com",
+      "nome": "Kaladin",
+      "matricula": "1234567",
+      "email": "kaladin@gmail.com",
+      "cpf": "123.456.789-10",
       "id": 8
     },
     {
-      "nome": 0,
-      "matricula": "Alex dos Santos de Araújo",
-      "email": "1234567",
-      "cpf": "araujo.alexsantos@gmail.com",
+      "nome": "Geraldão",
+      "matricula": "1234567",
+      "email": "geraldao@gmail.com",
+      "cpf": "123.456.789-01",
       "id": 9
     },
     {
-      "nome": "Alex dos Santos de Araújo",
+      "nome": "Adolin",
       "matricula": "1234567",
-      "email": "araujo.alexsantos@gmail.com",
-      "cpf": "1234567890",
+      "email": "adolin@gmail.com",
+      "cpf": "123.456.789-40",
       "id": 10
     },
     {
-      "nome": "Alex dos Santos de Araújo",
+      "nome": "Danilar",
       "matricula": "1234567",
-      "email": "araujo.alexsantos@gmail.com",
-      "cpf": "1234567890",
-      "id": 11
+      "email": "dalinar@gmail.com",
+      "cpf": "123.456.789-30",
+      "id": 12
+    },
+    {
+      "nome": "Meridas",
+      "matricula": "1234567",
+      "email": "meridas@gmail.com",
+      "cpf": "123.456.789-01",
+      "id": 13
+    },
+    {
+      "nome": "Shallan",
+      "matricula": "1234567",
+      "email": "shallan@gmail.com",
+      "cpf": "123.456.789-20",
+      "id": 14
+    },
+    {
+      "nome": "Renarin",
+      "matricula": "1234567",
+      "email": "renarin@gmail.com",
+      "cpf": "123.456.789-60",
+      "id": 15
+    },
+    {
+      "nome": "Rlain",
+      "matricula": "1234567",
+      "email": "rlain@outlook.com",
+      "cpf": "123.456.789-90",
+      "id": 16
     }
   ]
 }

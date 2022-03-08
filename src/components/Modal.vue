@@ -32,6 +32,7 @@
           <div class="input">
             <label for="input-matricula">Matricula:</label>
             <input
+              v-mask="'#######'"
               type="text"
               id="input-matricula"
               name="input-matricula"
@@ -52,6 +53,7 @@
           <div class="input">
             <label for="input-cpf">CPF:</label>
             <input
+              v-mask="'###.###.###-##'"
               type="text"
               id="input-cpf"
               name="input-cpf"
@@ -86,7 +88,7 @@
 </template>
 
 <script>
-import UserVue from "./User.vue";
+import {mask} from 'vue-the-mask'
 export default {
   name: "Modal",
   data() {
@@ -103,11 +105,13 @@ export default {
     propId: Number,
     propIsUpdate: Boolean,
   },
+  directives: { mask },
   methods: {
     close() {
       this.$emit("close");
     },
     updateUser() {
+      
       this.$parent.updateUser(
         this.id,
         this.inputNome,

@@ -1,13 +1,6 @@
 {
   "usuarios": [
     {
-      "id": 2,
-      "nome": "Ginger Dominguez",
-      "matricula": "7138228",
-      "email": "eget@goat.com",
-      "cpf": "18384905070"
-    },
-    {
       "id": 4,
       "nome": "Brooke Park",
       "matricula": "6483679",
@@ -36,9 +29,9 @@
       "id": 8
     },
     {
-      "nome": "Geraldão",
+      "nome": "Syl",
       "matricula": "1234567",
-      "email": "geraldao@gmail.com",
+      "email": "syl@gmail.com",
       "cpf": "123.456.789-01",
       "id": 9
     },
@@ -83,6 +76,20 @@
       "email": "rlain@outlook.com",
       "cpf": "123.456.789-90",
       "id": 16
+    },
+    {
+      "nome": "Shalash",
+      "matricula": "1234567",
+      "email": "shalash@gmail.com",
+      "cpf": "123.456.789-60",
+      "id": 17
+    },
+    {
+      "nome": "Teft",
+      "matricula": "1234567",
+      "email": "teft@gmail.com",
+      "cpf": "123.456.789-02",
+      "id": 18
     }
   ]
 }

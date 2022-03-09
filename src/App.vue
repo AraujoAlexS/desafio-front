@@ -19,8 +19,8 @@
       class="modal-container"
       v-show="isModalVisible"
       @close="closeModal"
-      :propId="0"
       :propIsUpdate="false"
+      :data="{}"
     >
       <template v-slot:header> Adicionar dados </template>
     </Modal>
@@ -71,6 +71,7 @@ export default {
           "Content-type": "application/json; charset=UTF-8",
         },
       });
+      console.log(res)
       return res.status;
     },
     async addUser(userNome, userMatricula, userEmail, userCpf) {
@@ -88,9 +89,9 @@ export default {
           "Content-type": "application/json; charset=UTF-8",
         },
       });
-      console.log(res.status, typeof res.status);
       if (res.status < 400) {
         const data = await this.getUsers();
+        window.alert('Dados adicionados com sucesso!')
         this.users = data;
       }
     },

@@ -100,17 +100,20 @@ export default {
   name: "Modal",
   data() {
     return {
-      id: this.propId,
       isUpdate: this.propIsUpdate,
-      inputNome: this.inputNome,
-      inputMatricula: this.inputMatricula,
-      inputEmail: this.inputEmail,
-      inputCpf: this.inputCpf,
+      id: this.data.id,
+      inputNome: this.data.nome,
+      inputMatricula: this.data.matricula,
+      inputEmail: this.data.email,
+      inputCpf: this.data.cpf,
     };
   },
   props: {
-    propId: Number,
     propIsUpdate: Boolean,
+    data: {
+      type: Object,
+    },
+    
   },
   directives: { mask },
   methods: {
@@ -125,7 +128,7 @@ export default {
         this.inputEmail,
         this.inputCpf
       );
-
+      
       this.close();
     },
     async addUser() {

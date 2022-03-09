@@ -1,18 +1,11 @@
 {
   "usuarios": [
     {
-      "id": 4,
-      "nome": "Brooke Park",
-      "matricula": "6483679",
-      "email": "aliquet@goat.com",
-      "cpf": "65726953010"
-    },
-    {
-      "nome": "Alex dos Santos de Araújo",
+      "nome": "The Lopen",
       "matricula": "1234567",
-      "email": "araujo.alexsantos@gmail.com",
-      "cpf": "1234567891",
-      "id": 5
+      "email": "thelopen@gmail.com",
+      "cpf": "123.456.789-60",
+      "id": 4
     },
     {
       "nome": "Navani",
@@ -29,9 +22,9 @@
       "id": 8
     },
     {
-      "nome": "Syl",
+      "nome": "Sylphrena",
       "matricula": "1234567",
-      "email": "syl@gmail.com",
+      "email": "syl@hotmail.com",
       "cpf": "123.456.789-01",
       "id": 9
     },
@@ -90,6 +83,34 @@
       "email": "teft@gmail.com",
       "cpf": "123.456.789-02",
       "id": 18
+    },
+    {
+      "nome": "Raboniel",
+      "matricula": "1234567",
+      "email": "raboniel@outlook.com",
+      "cpf": "123.456.789-01",
+      "id": 19
+    },
+    {
+      "nome": "Lift",
+      "matricula": "1234567",
+      "email": "lift@bing.com",
+      "cpf": "123.456.789-01",
+      "id": 20
+    },
+    {
+      "nome": "Lyn ",
+      "matricula": "1234567",
+      "email": "lyn@gmail.com",
+      "cpf": "123.456.789-01",
+      "id": 21
+    },
+    {
+      "nome": "Wit",
+      "matricula": "1234567",
+      "email": "wit@gmail.com",
+      "cpf": "123.456.789-01",
+      "id": 23
     }
   ]
 }

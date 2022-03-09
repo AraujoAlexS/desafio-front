@@ -15,8 +15,9 @@
       class="modal-container"
       v-show="isModalVisible"
       @close="closeModal"
-      :propId="id"
       :propIsUpdate="true"
+      :data="this.user"
+      
     >
       <template v-slot:header> Atualizar dados </template>
     </Modal>
@@ -46,7 +47,7 @@ export default {
     },
   },
   methods: {
-    deleteUser(id) {
+    async deleteUser(id) {
       this.$parent.deleteUser(id);
       this.$el.parentNode.removeChild(this.$el);
     },
@@ -58,8 +59,9 @@ export default {
         userEmail,
         userCpf
       );
-      console.log(res)
+      console.log(res);
       if (res < 400) {
+        window.alert("Update realizado com sucesso");
         this.nome = userNome;
         this.matricula = userMatricula;
         this.email = userEmail;

@@ -72,6 +72,9 @@
 
         <footer class="modal-footer">
           <slot name="footer"> </slot>
+          <!--O modal pode ser utilizado tanto para atualizar quanto para inserir um novo usuário,
+          já que os dados necessários para as duas  operações são os mesmos
+          -->
           <button
             type="button"
             class="btn btn-green"
@@ -178,7 +181,7 @@ export default {
 .modal-header {
   position: relative;
   border-bottom: 1px solid #eeeeee;
-  color: #4aae9b;
+  color: #00254b;
   justify-content: space-between;
 }
 
@@ -204,7 +207,7 @@ export default {
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-  color: #4aae9b;
+  color: #00254b;
   background: transparent;
 }
 
@@ -221,8 +224,8 @@ export default {
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 .btn-green {
-  background: #4aae9b;
-  border: 1px solid #4aae9b;
+  background: #00254b;
+  border: 1px solid #00254b;
 }
 .btn-red {
   background: rgb(216, 67, 67);
@@ -249,12 +252,12 @@ input {
   margin: 5px 0;
   padding: 5px;
   border-radius: 4px;
-  border: 1px solid #4aae9b;
+  border: 1px solid #00254b;
 }
 input:focus {
   outline: none;
 }
 label {
-  color: #4aae9b;
+  color: #00254b;
 }
 </style>

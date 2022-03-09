@@ -44,19 +44,20 @@ export default {
   },
   methods: {
     async getUser(id) {
-      const req = await fetch("http://localhost:3000/usuarios/" + id);
-      const data = await req.json();
+      const res = await fetch("http://localhost:3000/usuarios/" + id);
+      const data = await res.json();
       return data;
     },
     async getUsers() {
-      const req = await fetch("http://localhost:3000/usuarios");
-      const data = await req.json();
+      const res = await fetch("http://localhost:3000/usuarios");
+      const data = await res.json();
       return data;
     },
     async deleteUser(id) {
-      fetch("http://localhost:3000/usuarios/" + id, {
+      const res = fetch("http://localhost:3000/usuarios/" + id, {
         method: "DELETE",
       });
+      return res;
     },
     async updateUser(id, userNome, userMatricula, userEmail, userCpf) {
       const res = await fetch("http://localhost:3000/usuarios/" + id, {
@@ -71,7 +72,7 @@ export default {
           "Content-type": "application/json; charset=UTF-8",
         },
       });
-      console.log(res)
+      console.log(res);
       return res.status;
     },
     async addUser(userNome, userMatricula, userEmail, userCpf) {
@@ -91,7 +92,7 @@ export default {
       });
       if (res.status < 400) {
         const data = await this.getUsers();
-        window.alert('Dados adicionados com sucesso!')
+        window.alert("Dados adicionados com sucesso!");
         this.users = data;
       }
     },

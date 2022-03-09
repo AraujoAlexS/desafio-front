@@ -5,9 +5,11 @@
     <td>{{ matricula }}</td>
     <td>{{ email }}</td>
     <td>{{ cpf }}</td>
+    <!--Edit-->
     <td class="content-center" @click="showModal()">
       <i class="fa-solid fa-pencil"></i>
     </td>
+    <!--Delete-->
     <td class="content-center" @click="deleteUser(id)">
       <i class="fa-solid fa-trash"></i>
     </td>
@@ -48,8 +50,13 @@ export default {
   },
   methods: {
     async deleteUser(id) {
-      this.$parent.deleteUser(id);
-      this.$el.parentNode.removeChild(this.$el);
+      const res = await this.$parent.deleteUser(id);
+      console.log(res.status)
+      if(res.status < 400) {
+        window.alert('Usuário deletado com sucesso!')
+        this.$el.parentNode.removeChild(this.$el);
+      }
+      
     },
     async updateUser(id, userNome, userMatricula, userEmail, userCpf) {
       const res = await this.$parent.updateUser(

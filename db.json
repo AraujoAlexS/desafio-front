@@ -43,13 +43,6 @@
       "id": 12
     },
     {
-      "nome": "Meridas",
-      "matricula": "1234567",
-      "email": "meridas@gmail.com",
-      "cpf": "123.456.789-01",
-      "id": 13
-    },
-    {
       "nome": "Shallan",
       "matricula": "1234567",
       "email": "shallan@gmail.com",
@@ -69,13 +62,6 @@
       "email": "rlain@outlook.com",
       "cpf": "123.456.789-90",
       "id": 16
-    },
-    {
-      "nome": "Shalash",
-      "matricula": "1234567",
-      "email": "shalash@gmail.com",
-      "cpf": "123.456.789-60",
-      "id": 17
     },
     {
       "nome": "Teft",
@@ -99,18 +85,11 @@
       "id": 20
     },
     {
-      "nome": "Lyn ",
+      "nome": "Lezian",
       "matricula": "1234567",
-      "email": "lyn@gmail.com",
+      "email": "Lezian@outlook.com",
       "cpf": "123.456.789-01",
-      "id": 21
-    },
-    {
-      "nome": "Wit",
-      "matricula": "1234567",
-      "email": "wit@gmail.com",
-      "cpf": "123.456.789-01",
-      "id": 23
+      "id": 22
     }
   ]
 }

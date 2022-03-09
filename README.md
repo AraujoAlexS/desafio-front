@@ -1,5 +1,9 @@
 # Desafio Front-End GOAT
 
+## Status do desafio
+
+__FINALIZADO__
+
 ## Começando
 - Faça um fork deste repositório.
 - Run `npm install` para instalar as dependencias do projeto.
